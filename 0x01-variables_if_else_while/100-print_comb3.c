@@ -2,7 +2,7 @@
 
 /**
  * main - prints all possible different combinations of 2 digits
- * Returns: Always 0
+ * Return: Always 0
  */
 int main(void)
 {
@@ -16,7 +16,7 @@ int main(void)
 			putchar((digit1 % 10) + '0');
 			putchar((digit2 % 10) + '0');
 
-			if (digit1 == 8 && digit2 == 0)
+			if (digit1 == 8 && digit2 == 9)
 				continue;
 			putchar(',');
 			putchar(' ');
