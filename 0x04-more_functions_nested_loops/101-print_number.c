@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * print_number - prints on integer
- * @n: The integer to print
- * Return: 0
+ * print_number - prints an integer
+ * @n: input integer parameter
  */
 void print_number(int n)
 {
@@ -16,7 +15,7 @@ void print_number(int n)
 	}
 	if (k / 10)
 	{
-		print_number(k / 10);
+		_putchar(k / 10);
 	}
 	_putchar(k % 10 + '0');
 }
