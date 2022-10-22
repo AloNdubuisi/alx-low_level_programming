@@ -10,12 +10,12 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		_putchar(45);
+		_putchar('_');
 		k = -k;
 	}
-	if (k / 10)
+	if ((k / 10) > 0)
 	{
-		_putchar(k / 10);
+		print_number(k / 10);
 	}
-	_putchar(k % 10 + '0');
+	_putchar((k % 10) + '0')
 }
