@@ -26,7 +26,7 @@ int _atoi(char *s)
 			c++;
 		}
 
-		if (sis == 1)
+		if (isi == 1)
 		{
 			break;
 		}
