@@ -2,33 +2,30 @@
 
 /**
  * cap_string - a function that capitalizes all words of a string
- * @n: string
+ * @s: string
  * Return: pointer to string
  */
-char *cap_string(char *n)
+char *cap_string(char *s)
 {
-	int i, x;
-	int cap = 32;
-	int separator[] = {',', ';', '.', '?', '"';								'(', ')', '{', '}', ' ', '\n', '\t'};
+	int i = 0, j;
+	char a[] = " \t\n,;.!?\"(){}";
 
-
-	for (i = 0; n[i] != '\0'; i++)
+	while (*(s + i))
 	{
-		if (n[i] >= 'a' && n[i] <= 'z')
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
 		{
-			n[i] = n[i] - cap;
-		}
-
-		cap = 0;
-
-		for (x = 0; x <= 12; x++)
-		{
-			if (n[i] == separator[x])
+			if (i == 0)
+				*(s + i) -= 'a' - 'A';
+			else
 			{
-				x = 12;
-				cap = 32;
+				for (j = 0; j <= 12; j++)
+				{
+					if (a[j] == *(s + i - 1))
+						*(s + i) -= 'a' - 'A';
+				}
 			}
 		}
+		i++;
 	}
-	return (n);
+	return (s);
 }
