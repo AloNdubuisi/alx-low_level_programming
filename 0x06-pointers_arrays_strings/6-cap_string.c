@@ -9,7 +9,8 @@ char *cap_string(char *n)
 {
 	int i, x;
 	int cap = 32;
-	int separator[] = {',', ';', '.', '?', '"', '(', ')', '{', '}', ' ', '\n', '\t'};
+	int separator[] = {',', ';', '.', '?', '"';								'(', ')', '{', '}', ' ', '\n', '\t'};
+
 
 	for (i = 0; n[i] != '\0'; i++)
 	{
