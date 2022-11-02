@@ -6,20 +6,16 @@
  * @n: natural number
  * Return: evaluate sqrt
  */
-int _evalute(int i, int n)
+int _evaluate(int i, int n)
 {
-	if (n < 0)
-	{
-		return (-1);
-	}
-	else if (n == 0 || n == 1)
-	{
+	if (n == 0 || n == 1)
 		return (n);
-	}
-	else
-	{
-		return (sqrt_manual(n, 1));
-	}
+	else if (i * i < n)
+		return (_evaluate(i + 1, n));
+	else if (i * i == n)
+		return (i);
+	return (-1);
+	return (-1);
 }
 /**
  * _sqrt_manual - evaluate sqrt
@@ -31,7 +27,9 @@ int _sqrt_recursion(int n)
 	int i = 0;
 
 	if (i < 0)
+	{
 		return (-1);
+	}
 	else
 	{
 		return (_evaluate(i, n));
