@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - return the sqrt of a natural number.
+ * _evaluate - evaluate function sqrt
+ * @i: integer
  * @n: natural number
- * Return: sqrt 0 if sqrt is not natural.
+ * Return: evaluate sqrt
  */
-int _sqrt_recursion(int n)
+int _evalute(int i, int n)
 {
 	if (n < 0)
 	{
@@ -21,23 +22,18 @@ int _sqrt_recursion(int n)
 	}
 }
 /**
- * sqrt_manual - calculate manualy the sqrt of a number.
+ * _sqrt_manual - evaluate sqrt
  * @n: natural number
- * @i: counter or number to be multiplied.
- * Return: sqrt 0 if sqrt is not natural.
+ * Return: sqrt_recursion
  */
-int _evaluate(int i, int n)
+int _sqrt_recursion(int n)
 {
-	if (i * i == n)
-	{
-		return (i);
-	}
-	else if (i * i > n)
-	{
+	int i = 0;
+
+	if (i < 0)
 		return (-1);
-	}
 	else
 	{
-		return (sqrt_manual(n, i + i));
+		return (_evaluate(i, n));
 	}
 }
