@@ -26,7 +26,7 @@ int _sqrt_recursion(int n)
  * @i: counter or number to be multiplied.
  * Return: sqrt 0 if sqrt is not natural.
  */
-int sqrt_manual(int n, int i)
+int _evaluate(int i, int n)
 {
 	if (i * i == n)
 	{

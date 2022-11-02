@@ -9,7 +9,7 @@ int _strlen_recursion(char *s);
 
 int factorial(int n);
 
-int sqrt_manual(int n, int i)
+int _evaluate(int i, int n)
 
 int _pow_recursion(int x, int y);
 
