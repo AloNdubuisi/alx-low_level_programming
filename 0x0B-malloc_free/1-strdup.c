@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * *_strdup - return length of a string
+ * _strdup - return length of a string
  * @s: char type
  * Return:  length of string
  */
