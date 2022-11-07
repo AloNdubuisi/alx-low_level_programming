@@ -3,11 +3,11 @@
 #include <stdio.h>
 
 /**
- * _strlen - return length of a string
+ * *_strdup - return length of a string
  * @s: char type
  * Return:  length of string
  */
-int _strlen(char *s)
+int _strdup(char *s)
 {
 	int a;
 
